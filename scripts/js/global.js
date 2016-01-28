@@ -3,7 +3,7 @@ var lastRequestTimeStamp = new Date().getTime();
 var page = 1;	
 var pageSize = 100;
 /***************************** router *************************/
-var router = new kendo.Router();//{ pushState: true }
+var router = new kendo.Router();
 router.route("/:mymode", function(mymode) {
 	mode = mymode;
 	clearSearchResults();
